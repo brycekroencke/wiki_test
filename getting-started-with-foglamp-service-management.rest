@@ -7,7 +7,7 @@ Getting Started With FogLAMP Service Management
 
 1. Install foglamp-service-management via (a) Package or (b) Repository
 =======================================================================
-(a) Package
+(a) Package 
 -----------
 ``sudo apt install -y foglamp-service-management``
 
@@ -52,7 +52,7 @@ Getting Started With FogLAMP Service Management
 
 5. Using FogLAMP GUI configure FogLAMP for Poll
 =============================
-| 1. FogLAMP GUI :raw-html:`&rarr;` Configuration :raw-html:`&rarr;` FogLAMP Service
+| 1. FogLAMP GUI :raw-html:`&rarr;` Configuration :raw-html:`&rarr;` FogLAMP Service 
 | Change *Name* to FogLAMP-that-polls.
 | 2. FogLAMP GUI :raw-html:`&rarr;` Configuration :raw-html:`&rarr;` select FogMan Agent from dropdown
 | Set *FogMAN Host* to the IP of FogMAN and configure the credentials.
@@ -93,3 +93,6 @@ Getting Started With FogLAMP Service Management
 8. Verify the poll was successful
 =================================
 Once the 5 minute interval has triggered the poll, new configurations will be read into the FogLAMP.
+
+
+

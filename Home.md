@@ -1,0 +1,1 @@
+Welcome to **FogMAN** wiki!
