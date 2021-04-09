@@ -62,14 +62,14 @@ Getting Started With FogLAMP Service Management
 4. Using FogMAN GUI add the FogLAMP and configure it to Poll
 ======================================================
 | FogMAN GUI :raw-html:`&rarr;` FogLAMPs :raw-html:`&rarr;` add FogLAMP
-| Set *Name* to "FogLAMP-that-polls", *Address* to the FogLAMPs IP, and the credentials to the appropriate values. **Check "FogLAMP Polls FogMAN"** then click add. If you navigate back to the FogLAMPs tab you should see a tag "Poll" next to the FogLAMP.
+| Set **Name** to "FogLAMP-that-polls", **Address** to the FogLAMPs IP, and the credentials to the appropriate values. **Check "FogLAMP Polls FogMAN"** then click add. If you navigate back to the FogLAMPs tab you should see a tag "Poll" next to the FogLAMP.
 
 5. Using FogLAMP GUI configure FogLAMP for Poll
 =============================
 | 1. FogLAMP GUI :raw-html:`&rarr;` Configuration :raw-html:`&rarr;` FogLAMP Service
-| Change *Name* to FogLAMP-that-polls.
+| Change **Name** to FogLAMP-that-polls.
 | 2. FogLAMP GUI :raw-html:`&rarr;` Configuration :raw-html:`&rarr;` select FogMan Agent from dropdown
-| Set *FogMAN Host* to the IP of FogMAN and configure the credentials.
+| Set **FogMAN Host** to the IP of FogMAN and configure the credentials.
 
 6. Verify the existence of both the **FM Agent** and the **FogMAN Agent Poll** schedules
 ==========================================================
@@ -106,7 +106,7 @@ Getting Started With FogLAMP Service Management
 7. Update **FogMAN Agent Poll** schedule to desired poll conditions
 ===================================================================
 | FogLAMP GUI :raw-html:`&rarr;` Schedules :raw-html:`&rarr;` FogMAN Agent Poll
-| Change *Type* to INTERVAL and configure *Repeat (Interval)* to occur once every 5 min (``0`` ``00:05:00``) and save.
+| Change **Type** to INTERVAL and configure **Repeat (Interval)** to occur once every 5 min (``0`` ``00:05:00``) and save.
 
 8. Verify the poll was successful
 =================================
