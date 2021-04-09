@@ -79,7 +79,7 @@ Getting Started With FogLAMP Service Management
 
 .. code-block:: JSON
 
-{
+    {
         "id": "ecc64ce3-6f3c-4cfb-b310-21113f04cb18",
         "name": "FogMan Agent",
         "processName": "management",
