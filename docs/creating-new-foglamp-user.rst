@@ -26,6 +26,7 @@ Logging into the FogLAMP with the new cert
         2. Open a new browser tab and ping the FogLAMP by entering the command below in the URL bar, replacing {FogLAMP-ip} with the IP of the FogLAMP
 
         .. code-block:: console
+
             https://{FogLAMP-ip}:1995/foglamp/ping
 
         3. Allow the web browser to be loaded

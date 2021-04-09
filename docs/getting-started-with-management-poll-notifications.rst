@@ -5,7 +5,7 @@ Getting Started With Management Poll Notifications
 **************************************************
 
 1. Set up FogLAMP Service Management
-    See `Getting Started With FogLAMP Service Management <https://github.com/dianomic/fogman_wiki/wiki/Getting-Started-With-FogLAMP-Service-Management>`_
+    See :ref:`foglamp-service-management`
     Before continuing this document you should have a FogLAMP configured to poll from FogMAN on a scheduled interval.
 
 2. Install foglamp-notify-management
