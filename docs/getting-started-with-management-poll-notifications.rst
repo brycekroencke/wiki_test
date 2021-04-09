@@ -24,8 +24,8 @@ Getting Started With Management Poll Notifications
     FogMAN GUI :raw-html:`&rarr;` FogLAMPs :raw-html:`&rarr;` :raw-html:`&#8942;` to the right of "FogLAMP-that-polls" :raw-html:`&rarr;` Event Processors :raw-html:`&rarr;` Add
     Set **Template** to "threshold-management" and configure the rest of the notification to match the image below.
 
-    image:: images/fm-agent-setup/configure-notification.png
-            :scale: 50
+    .. image:: images/fm-agent-setup/configure-notification.png
+               :scale: 50
 
 6. Change FogMan Agent Poll Schedule type to MANUAL
     FogMAN GUI :raw-html:`&rarr;` FogLAMPs :raw-html:`&rarr;` "FogLAMP-that-polls" :raw-html:`&rarr;` Schedules :raw-html:`&rarr;` FogMan Agent Poll
@@ -35,6 +35,7 @@ Getting Started With Management Poll Notifications
 
 7. Deploy and confirm configuration has been polled by FogLAMPs scheduled poll
     Using the FogMAN GUI, Deploy the configuration. Once the poll schedule triggers you should see three changes in the FogLAMP GUI
+
         1. The sinusoid
         2. The new notification
         3. The changed schedule for FogMan Poll Agent
