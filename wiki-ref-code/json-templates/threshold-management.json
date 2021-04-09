@@ -1,0 +1,159 @@
+{
+    "delivery": [
+        {
+            "plugin": "management",
+            "properties": [
+                {
+                    "default": "false",
+                    "description": "A switch that can be used to enable or disable delivery of the management notification plugin.",
+                    "displayName": "Enabled",
+                    "immutable": "false",
+                    "name": "enable",
+                    "order": "3",
+                    "type": "boolean"
+                }
+            ]
+        }
+    ],
+    "name": "threshold-management",
+    "owner": "System",
+    "properties": [
+        {
+            "default": "true",
+            "description": "A switch that can be used to enable or disable the notification",
+            "displayName": "Enabled",
+            "immutable": "false",
+            "name": "enable",
+            "order": "1",
+            "type": "boolean"
+        },
+        {
+            "default": "one shot",
+            "description": "Type of notification",
+            "displayName": "Type",
+            "immutable": "false",
+            "name": "notification_type",
+            "options": "[ \"one shot\", \"retriggered\", \"toggled\" ]",
+            "order": "2",
+            "type": "enumeration"
+        },
+        {
+            "default": "60",
+            "description": "Retrigger time in seconds for sending a new notification",
+            "displayName": "Retrigger Time",
+            "immutable": "false",
+            "name": "retrigger_time",
+            "order": "3",
+            "type": "integer"
+        }
+    ],
+    "rights": {
+        "inherit": true,
+        "update": false,
+        "use": true
+    },
+    "rule": {
+        "plugin": "Threshold",
+        "properties": [
+            {
+                "default": "",
+                "description": "The asset name for which notifications will be generated.",
+                "displayName": "Asset name",
+                "name": "asset",
+                "order": "1",
+                "type": "string",
+                "immutable": "false"
+            },
+            {
+                "default": "",
+                "description": "The datapoint within the asset name for which notifications will be generated.",
+                "displayName": "Datapoint name",
+                "name": "datapoint",
+                "order": "2",
+                "type": "string",
+                "immutable": "false"
+            },
+            {
+                "default": ">",
+                "description": "The condition to evalaute",
+                "displayName": "Condition",
+                "name": "condition",
+                "order": "3",
+                "type": "enumeration",
+                "options": [
+                    ">",
+                    ">=",
+                    "<",
+                    "<="
+                ],
+                "immutable": "false"
+            },
+            {
+                "default": "0.0",
+                "description": "Value at which to trigger a notification.",
+                "displayName": "Trigger value",
+                "name": "trigger_value",
+                "order": "4",
+                "type": "float",
+                "immutable": "false"
+            },
+            {
+                "default": "Single Item",
+                "description": "The rule evaluation data: single item or window",
+                "displayName": "Evaluation data",
+                "name": "evaluation_data",
+                "order": "5",
+                "type": "enumeration",
+                "options": [
+                    "Single Item",
+                    "Window"
+                ],
+                "immutable": "false"
+            },
+            {
+                "default": "Average",
+                "description": "Window data evaluation type",
+                "displayName": "Window evaluation",
+                "name": "window_data",
+                "order": "6",
+                "type": "enumeration",
+                "options": [
+                    "Maximum",
+                    "Minimum",
+                    "Average"
+                ],
+                "immutable": "false"
+            },
+            {
+                "default": "30",
+                "description": "Duration of the time window, in seconds, for collecting data points",
+                "displayName": "Time window",
+                "name": "time_window",
+                "order": "7",
+                "type": "integer",
+                "immutable": "false"
+            }
+        ]
+    },
+    "software": [
+        {
+            "description": "Generate a notification when datapoint value crosses a boundary.",
+            "package": "",
+            "plugin": "Threshold",
+            "version": {
+                "maximum": "1.0.0",
+                "minimum": "0.0.0"
+            }
+        },
+        {
+            "description": "Management notification plugin",
+            "package": "foglamp-notify-management",
+            "plugin": "management",
+            "version": {
+                "maximum": "1.9.0",
+                "minimum": "0.0.0"
+            }
+        }
+    ],
+    "type": "Notification"
+}
