@@ -1,3 +1,2 @@
 # fogman-wiki
-Beginning to compile FogMAN documentation into a centralized source.
-Navigate to the Wiki tab of this repo to view.
+Changed host to readthedocs because GitHubs wiki support for rst is weak
